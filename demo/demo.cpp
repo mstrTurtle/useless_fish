@@ -1,4 +1,4 @@
-#include "fish.h"
+#include "..\src\fish.h"
 #include "cassert"
 
 #include <cstdio>
