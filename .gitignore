@@ -1,3 +1,4 @@
 obj/*
+!obj/Makefile
 bin/*
 debug/*
