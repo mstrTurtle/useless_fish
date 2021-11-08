@@ -5,6 +5,7 @@
 
 int main(int argc, char* argv[]){
     char* comm;
+    turtle::animal::Fish fish;
     comm = new char[100];
     if(argc == 1){
         printf("Please specify a file.\n");
@@ -14,10 +15,9 @@ int main(int argc, char* argv[]){
     }else{
         printf("\"%s\" has been loaded.\n",argv[1]);
     }
-    turtle::animal::Fish fish;
     printf("Now you have a fish.");
     while(true){
-        if(!gets(comm)) goto err;
+        gets(comm);
         if(strcmp(comm,"flow") == 0){
             fish.flow();
             printf("Fish flowed.\n");
@@ -33,7 +33,8 @@ int main(int argc, char* argv[]){
             char* t = new char[100];
             printf("New name: ");
             gets(t);
-            if(fish.give_name(t)){
+            if(!fish.give_name(t)){
+                fish.get_name(t);
                 printf("Fish name given: %s.\n",t);
             }else{
                 fish.get_name(t);
