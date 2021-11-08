@@ -2,6 +2,7 @@
 #include <cassert>
 #include <cstdio>
 #include <cstring>
+#include <cstdlib>
 
 #define PRINT_NAME(fish_obj) \
     if(!fish.get_name(t))\
@@ -50,7 +51,7 @@ int main(int argc, char* argv[]){
     }
     delete[] comm;
     delete[] t;
-    return 0;
+    return EXIT_SUCCESS;
 err:
-    return 1;
+    return EXIT_FAILURE;
 }
