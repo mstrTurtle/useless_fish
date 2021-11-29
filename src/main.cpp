@@ -8,7 +8,7 @@
     if(!fish.get_name(t))\
         printf("Fish name: %s.\n",t);\
     else\
-        printf("Name not exists.");
+        printf("Name does not exist.");
 
 using turtle::animal::Fish;
 
