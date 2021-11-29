@@ -6,7 +6,7 @@
 
 #define PRINT_NAME(fish_obj) \
     if(!fish.get_name(t))\
-        printf("Fish name: %s.\n",t);\
+        printf("Fish's name: %s.\n",t);\
     else\
         printf("Name not exists.");
 
